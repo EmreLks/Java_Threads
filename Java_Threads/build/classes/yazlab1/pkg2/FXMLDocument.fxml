@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="394.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yazlab1.pkg2.FXMLDocumentController">
+   <children>
+      <Button layoutX="574.0" layoutY="52.0" mnemonicParsing="false" onAction="#handlebasla" prefHeight="25.0" prefWidth="55.0" text="Basla">
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant color="#fc1e1e" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button layoutX="678.0" layoutY="52.0" mnemonicParsing="false" onAction="#handlebitir" prefHeight="25.0" prefWidth="55.0" text="Bitir">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#000dff" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button layoutX="20.0" layoutY="41.0" mnemonicParsing="false" onAction="#handlesifirla" prefHeight="25.0" prefWidth="55.0" text="Sıfırla">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button layoutX="626.0" layoutY="90.0" mnemonicParsing="false" onAction="#handlecikis" prefHeight="25.0" prefWidth="55.0" text="Cıkıs">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#00da19" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <TextArea fx:id="texkanal" layoutX="17.0" layoutY="154.0" prefHeight="185.0" prefWidth="363.0">
+         <effect>
+            <InnerShadow choke="0.59" color="#e40202" height="26.93" radius="14.4475" width="32.86" />
+         </effect>
+      </TextArea>
+      <TextArea fx:id="texsonuc" layoutX="401.0" layoutY="154.0" prefHeight="185.0" prefWidth="346.0">
+         <effect>
+            <InnerShadow choke="0.92" color="#0111f5" />
+         </effect>
+      </TextArea>
+      <Label layoutX="14.0" layoutY="83.0" text="Veritabanı Eleman Sayisi">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lsifirla" layoutX="198.0" layoutY="83.0" prefHeight="17.0" prefWidth="55.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lsonuc" layoutX="253.0" layoutY="351.0" prefHeight="20.0" prefWidth="288.0" textFill="#fc0303">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="123.0" text="Arastırılan Sayı :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="larastir" layoutX="142.0" layoutY="124.0" prefHeight="17.0" prefWidth="76.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="135.0" fitWidth="200.0" layoutX="297.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ekle.png" />
+         </image>
+         <effect>
+            <Reflection />
+         </effect>
+      </ImageView>
+      <Button layoutX="38.0" layoutY="349.0" mnemonicParsing="false" onAction="#handledondur" text="Dongu" />
+   </children>
+</AnchorPane>
